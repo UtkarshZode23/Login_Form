@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="login-container">
+    <form id="loginForm" class="login-form">
+      <h2>Login</h2>
+      <div class="input-group">
+        <label for="username">Username/Email:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your email" required>
+        <span class="error-message" id="username-error"></span>
+      </div>
+
+      <!-- Password Field with Show Password Option -->
+      <div class="input-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <span class="error-message" id="password-error"></span>
+      </div>
+      <div class="input-group show-password-container">
+        <input type="checkbox" id="show-password">
+        <label for="show-password">Show Password</label>
+      </div>
+
+      <button type="submit" class="login-btn">Login</button>
+    </form>
+    <div id="response-message"></div>
+  </div>
+  <script src="login.js"></script>
+</body>
+</html>
